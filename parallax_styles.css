@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; 
+    z-index:-1;
+    /* preserve 3d pls dont remove any change and preserve every change here */
+
+}
+
+.background, .foreground{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.adventure{
+    font-size: 8rem;
+    position: relative;
+    color: white;
+    letter-spacing: 4px;
+    /* transform: translateX(-50%); */
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.background{
+    transform: translateZ(-49px) scale(6);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+    /* opacity: 60%; */
+}
+
+.secHeading{
+    font-size: 4rem;
+    padding: 0 8rem;
+}
+.text{
+    font-size: 1rem;
+    padding: 0 8rem;
+    margin:3rem 0;
+}
+.bg1{
+    background-image: url(cycling.jpg);
+}
+.bg2{
+    background-image: url(paragliding.jpg);
+}
+.bg3{
+    background-image: url(surf.jpg);
+}
+.bg{
+    position: relative;
+    width:100%;
+    background-attachment: fixed;
+    height:500px;
+    background-size:cover;
+    background-position:center;
+}
+
+.desc{
+    position:absolute;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    color: black;
+    transform: translateX(-50%);
+
+
+}
