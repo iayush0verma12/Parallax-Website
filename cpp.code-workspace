@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Downloads/cpp"
+		},
+		{
+			"path": "../../webdev"
+		},
+		{
+			"path": "../../webdev/react"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../portfolio"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web1",
+		"liveServer.settings.port": 5501
+	}
+}
